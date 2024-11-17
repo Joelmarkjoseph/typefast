@@ -60,7 +60,12 @@ const startTimer = () => {
       clearInterval(interval);
       console.log('Timer ended!');
       inputField.readOnly = true;
+      if ((index-count)<=20){
       output.textContent = String(count) + " WPM";
+      }
+      else{
+        output.textContent = "MORE MISTAKESSSS!"
+      }
     }
   }, 1000); // Update every second (1000 milliseconds)
 };
