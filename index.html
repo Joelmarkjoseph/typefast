@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TYPEFAST</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="main">
+    <h1>TYPEFAST</h1>
+    <h2>
+      TIME LEFT :
+      <span id="timer">60</span>
+      Seconds
+    </h2>
+
+    <p id="textpreview"></p>
+    <input
+      type="text"
+      name="inp"
+      id="inp"
+      onpaste="return false;"
+      autocomplete="off"
+    />
+    <button onclick="window.location.reload()">RESTART</button>
+    <h1 id="op"></h1>
+    <script src="script.js"></script>
+  </body>
+</html>
